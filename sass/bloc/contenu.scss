@@ -1,0 +1,155 @@
+.contenu{
+    width: 71%;
+    margin-left: 20%;
+    padding: 5%;
+    @include responsive($sm){
+        width: 90%;
+        margin-left: 0;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: -20px;
+    }
+    hr{
+        height: 5px;
+        width: 10%;
+        background-color: rgb(82, 82, 116);
+        border: none;
+        border-radius: 20px;
+        margin-left: 45%;
+        
+    }
+    .slideshow-container{
+        margin-top: 30px;
+        margin-left: 25%;
+        .mySlides{
+            .slide{
+                border-radius: 30px;
+                width: 50%;
+            }
+        }
+        
+    }
+    .controle{
+        color: rgb(82, 82, 116);
+        margin-top: -13%;
+        position: absolute;
+        @include responsive($sm){
+            margin-top: -17%;
+        }
+        @include responsive($xs){
+            margin-top: -19%;
+        }
+        .prev{
+            margin-left: 15%;
+        }
+        .next{
+            margin-left: 39%;
+            @include responsive($sm){
+                margin-left: 55%;
+            }
+            @include responsive($xs){
+                margin-left: 52%;
+            }
+            
+        }
+    }
+    #except{
+        margin-top: 30px;
+    }
+    .pdesc{
+        margin-top: 30px;
+    }
+    .flex-container{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @include responsive($xs){
+            flex-direction: column;
+        }
+        #prv{
+            margin-left: 42%;
+            background-color: rgb(82, 82, 116);
+            padding: 15px;
+            width: 20px;
+            border-radius: 48%;
+            color: white;
+        }
+        p{
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .cols{
+        display: flex;
+        @include responsive($xs){
+            flex-direction: column;
+        }
+        .une{
+            margin-bottom: 30px;
+            h3{
+                margin-bottom: 15px;
+            }
+            .comp{
+                width: 70%;
+                
+            }
+        }
+        
+    }
+    form{
+        display: flex;
+        @include responsive($xs){
+            flex-direction: column;
+        }
+        .enter{
+            margin-bottom: 20px;
+            input{
+                border:none;
+                border-bottom: 1px solid black;
+                width: 60%;
+                padding: 5px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .area{
+            textarea{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 5px;
+                &:focus{
+                    outline: none;
+                }
+            }
+           
+        }
+        
+        
+    }
+    button{
+        width: 90px;
+        margin-left: 80%;
+        margin-top: 10px;
+        background-color: rgb(82, 82, 116);
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        &:hover{
+            border: 2px solid gray;
+            padding: 8px;
+            color: white;
+            transition: .1s;
+        }
+        @include responsive($xs){
+            margin-left: 0;
+        }
+    }
+    
+}

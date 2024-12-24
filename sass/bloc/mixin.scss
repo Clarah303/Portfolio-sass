@@ -1,0 +1,5 @@
+@mixin responsive($taille){
+    @media all and (max-width: $taille){
+        @content
+    }
+}

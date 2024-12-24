@@ -1,0 +1,52 @@
+footer{
+    width: 71%;
+    margin-left: 20%;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    border-top: 5px solid rgb(82, 82, 116);
+    @include responsive($sm){
+        width: 90%;
+        margin-left: 0;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive($sm){
+            flex-direction: column;
+        }
+        .first{
+            width: 30%;
+            margin-right: 30%;
+            @include responsive($sm){
+                margin-left: 30%;
+            }
+            @include responsive($xs){
+                width: 50%;
+            }
+        }
+        .second{
+            @include responsive($xs){
+                text-align: center;
+            }
+            
+            .info{
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                @include responsive($xs){
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .fin{
+                    margin-left: -50%;
+                    @include responsive($xs){
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
